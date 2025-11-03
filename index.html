@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Agent Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3B82F6", // Accent Blue from request
+                        "background-light": "#F9FAFB", // Off-white from request
+                        "background-dark": "#111827", // Dark charcoal from request
+                        "text-light": "#1F2937", // Dark gray text from request
+                        "text-dark": "#E5E7EB", // Soft white text from request
+                        "border-light": "#E5E7EB",
+                        "border-dark": "#374151",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1F2937",
+                        "surface-subtle-light": "#F3F4F6",
+                        "surface-subtle-dark": "#374151",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem", // a bit more rounded
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body></html>

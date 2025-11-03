@@ -1,0 +1,7 @@
+{
+  "description": "A customizable AI Agent Hub for personal productivity, leveraging various Gemini models for chat, vision, audio, grounding, and more.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "name": "App"
+}
